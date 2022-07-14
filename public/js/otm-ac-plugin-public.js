@@ -1,7 +1,7 @@
 (function() {
 	const app = {
 		AccessibilityWidget: null,
-		Host: "https://accessibly.apps.onthemapmarketing.com",
+		Host: "https://ac.onthemapmarketing.com",
 		Routes: {
 			Settings: "/api/options/"
 		},
@@ -15,7 +15,7 @@
 		},
 		AppendAccessibilityWidget: function(callback) {
 			//Build the CSS element
-			const cssLink = "http://dlieyhrm30x3f.cloudfront.net/accessibility-widget.min.css";
+			const cssLink = "https://cdn.accessibly.app/accessibility-widget.min.css";
 
 			var style = document.createElement("link");
 
@@ -25,7 +25,7 @@
 			document.head.appendChild(style);
 
 			//Build the script element
-			const scriptSrc = "http://dlieyhrm30x3f.cloudfront.net/accessibility-widget.umd.js";
+			const scriptSrc = "https://cdn.accessibly.app/accessibility-widget.umd.js";
 
 			var script = document.createElement("script");
 			script.src = scriptSrc;
@@ -40,22 +40,22 @@
 				iconColor: otmAcScriptData.iconColor,
 				themeColor: otmAcScriptData.themeColor,
 				position: otmAcScriptData.position,
-				showBrightness: otmAcScriptData.showBrightness === 'true',
-				showContrast: otmAcScriptData.showContrast === 'true',
-				showCursor: otmAcScriptData.showCursor === 'true',
-				showGrayScale: otmAcScriptData.showGrayScale === 'true',
-				showHideImages: otmAcScriptData.showHideImages === 'true',
-				showHighlightLinks: otmAcScriptData.showHighlightLinks === 'true',
-				showInvertColors: otmAcScriptData.showInvertColors === 'true',
-				showReadableFonts: otmAcScriptData.showReadableFonts === 'true',
-				showReadingLine: otmAcScriptData.showReadingLine === 'true',
-				showTooltip: otmAcScriptData.showTooltip === 'true',
-				showVoiceOverText: otmAcScriptData.showVoiceOverText === 'true',
-				showZoom: otmAcScriptData.showZoom === 'true',
+				showBrightness: otmAcScriptData.showBrightness,
+				showContrast: otmAcScriptData.showContrast,
+				showCursor: otmAcScriptData.showCursor,
+				showGrayScale: otmAcScriptData.showGrayScale,
+				showHideImages: otmAcScriptData.showHideImages,
+				showHighlightLinks: otmAcScriptData.showHighlightLinks,
+				showInvertColors: otmAcScriptData.showInvertColors,
+				showReadableFonts: otmAcScriptData.showReadableFonts,
+				showReadingLine: otmAcScriptData.showReadingLine,
+				showTooltip: otmAcScriptData.showTooltip,
+				showVoiceOverText: otmAcScriptData.showVoiceOverText,
+				showZoom: otmAcScriptData.showZoom,
 				voiceLanguage: otmAcScriptData.voiceLanguage,
-				showLogo: otmAcScriptData.showLogo  === 'true',
+				showLogo: otmAcScriptData.showLogo,
 				wordpress: true,
-				enabled: otmAcScriptData.enabled  === 'true'
+				enabled: otmAcScriptData.enabled
 			};
 
 			accessibilityWidget(settings);

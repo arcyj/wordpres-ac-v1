@@ -1,0 +1,21 @@
+{
+    "name": "otm/accessibly",
+    "description": "Accessiblity plugin made by On The Map Marketing",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Otm\\a=Accessibly\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arturs Juhnevics",
+            "email": "arturs@onthemap.com"
+        }
+    ],
+    "require": {
+        "grosv/laravel-passwordless-login": "^1.8",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

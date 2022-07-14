@@ -1,23 +1,36 @@
 {
-  "name": "wordpress-accessibility-plugin",
-  "version": "1.0.0",
+  "name": "accessibly",
+  "version": "2.0.0",
+  "description": "Make your website accessible to everyone. Helps with ADA & WCAG Compliance.",
   "main": "index.js",
-  "repository": "git@github.com:start-jobs/wordpress-accessibility-plugin.git",
-  "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "watch": "rollup -c -w"
+    "wp-test": "echo \"Error: no test specified\" && exit 1",
+    "wp-build": "wp-scripts build",
+    "wp-start": "wp-scripts start",
+    "wp-start:hot": "wp-scripts start --hot",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^16.0.0",
+    "next": "^12.1.6",
+    "postcss-cli": "^9.1.0",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
+    "speak-tts": "^2.0.8"
   },
   "devDependencies": {
-    "resolve": "^1.12.0",
-    "rollup": "^1.20.2",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^5.1.1",
-    "@babel/core": "^7.6.0"
-  },
-  "dependencies": {
-    "vanilla-picker": "^2.9.2"
+    "@wordpress/scripts": "^22.5.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
   }
 }
