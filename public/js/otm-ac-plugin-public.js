@@ -14,18 +14,8 @@
 			});
 		},
 		AppendAccessibilityWidget: function(callback) {
-			//Build the CSS element
-			const cssLink = "https://cdn.accessibly.app/accessibility-widget.min.css";
-
-			var style = document.createElement("link");
-
-			style.href = cssLink;
-			style.rel = "stylesheet";
-			//Append the script and style to the document's head.
-			document.head.appendChild(style);
-
 			//Build the script element
-			const scriptSrc = "https://cdn.accessibly.app/accessibility-widget.umd.js";
+			const scriptSrc = "https://cdn.accessibly.app/accessibility-widget-v2.min.js";
 
 			var script = document.createElement("script");
 			script.src = scriptSrc;
@@ -58,7 +48,7 @@
 				enabled: otmAcScriptData.enabled
 			};
 
-			accessibilityWidget(settings);
+			Accessibly.init(Object.assign(settings));
 		}
 	};
 
